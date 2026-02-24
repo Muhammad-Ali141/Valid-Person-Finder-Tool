@@ -26,3 +26,6 @@ You enter a company name and a job title (e.g. Microsoft, CEO). The app finds th
 - If not: an error message (e.g. no results or no name extracted).
 
 Test data is in `Test data.xlsx` (company + title per row). Use those rows in the UI or call `POST /api/search` with `{"company": "...", "designation": "..."}` for the same JSON result.
+
+6. Video Test Link
+https://drive.google.com/file/d/1VNEtEXsa9juqCHAavFsat3nwfnwjGReU/view?usp=sharing
