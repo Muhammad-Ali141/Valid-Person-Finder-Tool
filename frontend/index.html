@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valid Person Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Valid Person Finder</h1>
+      <p class="subtitle">Find the name of a person by company and designation</p>
+    </header>
+
+    <form id="searchForm" class="form">
+      <div class="form-group">
+        <label for="company">Company name</label>
+        <input type="text" id="company" name="company" placeholder="e.g. Facebook" required>
+      </div>
+      <div class="form-group">
+        <label for="designation">Designation / Title</label>
+        <input type="text" id="designation" name="designation" placeholder="e.g. CEO" required>
+      </div>
+      <button type="submit" id="submitBtn">Find person</button>
+    </form>
+
+    <div id="loading" class="loading hidden">
+      <span class="spinner"></span>
+      <p>Searching and validating sources…</p>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+    <div id="error" class="error hidden"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
